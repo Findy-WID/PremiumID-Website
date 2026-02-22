@@ -12,7 +12,7 @@ import NavigationOverlay from './components/NavigationOverlay';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/Tech-Assessment">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Gateway />} />
         
