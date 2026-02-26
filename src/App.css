@@ -8,3 +8,15 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+@theme {
+  --color-premium-primary: #2563eb;
+  --color-premium-secondary: #7c3aed;
+  --color-premium-dark: #1e293b;
+  --color-premium-light: #f1f5f9;
+  --color-premium-accent: #06b6d4;
+  
+  --color-identity-secure: #10b981;
+  --color-identity-warning: #f59e0b;
+  --color-identity-danger: #ef4444;
+}
