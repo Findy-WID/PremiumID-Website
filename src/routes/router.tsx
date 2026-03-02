@@ -10,6 +10,7 @@ import HealthcarePage from '../features/solutions/industries/HealthCare';
 import ManufacturingPage from '../features/solutions/industries/ManufacturingPage';
 import GovernmentPage from '../features/solutions/industries/GovernmentPage';
 import OilGasPage from '../features/solutions/industries/OilGasPage';
+import SingleSignOnPage from '../features/solutions/SingleSignonPage';
 
 export default function AppRoutes() {
   return (
@@ -22,6 +23,7 @@ export default function AppRoutes() {
       <Route path="/solutions/industry/manufacturing" element={<ManufacturingPage />} />
       <Route path="/solutions/industry/government" element={<GovernmentPage />} />
       <Route path="/solutions/industry/oil-gas" element={<OilGasPage />} />
+      <Route path="/solutions/single-sign-on" element={<SingleSignOnPage />} />
       {/* <Route path="/resources/:resourceType" element={<ResourcesPage />} /> */}
       <Route path="/company" element={<CompanyPage />} />
       <Route path="/contact" element={<ContactPage />} />

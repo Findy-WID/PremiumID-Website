@@ -6,10 +6,15 @@ export default function SmartCardPage() {
       {/* Hero */}
       <section className="relative bg-gradient-to-b from-premium-dark via-blue-900 to-premium-primary text-white py-20 pt-32 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">PremiumID Smart Card Plugin</h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+          <p className='text-gray-400 mb-5 text-m'>
             Passwordless hardware authentication with smart cards and security keys. 
             FIDO2, PIV, and CAC compliant for high-security environments.
+          </p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">PremiumID Smart Card Plugin</h1>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Do your users have to sign web forms or uploaded documents using their hardware tokens (smartcard or USB devices)? 
+            PremiumID Smart Card Plugin allows a web page to obtain device properties and to make digital signature. 
+            If your website requires the ability to strong authenticate users using their hardware keys, our solution allows the browser to retrieve data about the certificate and lets user sign the authentication challenge.
           </p>
           <div className="flex gap-4 justify-center">
             <a href="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">

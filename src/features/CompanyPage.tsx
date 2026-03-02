@@ -50,7 +50,7 @@ export default function CompanyPage() {
                 className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-auto lg:h-[500px]"
               >
                 <img
-                  src="/blitzhero.jpg"
+                  src="/prem3.jpg"
                   alt="Digital network connections representing secure identity bridges"
                   className="w-full h-full object-cover"
                 />
@@ -73,7 +73,7 @@ export default function CompanyPage() {
                     We specialize in high-performance software for corporate identity and access management — delivering secure, scalable solutions for authentication, authorization, and auditing in complex enterprise environments.
                   </p>
                   <p>
-                    Our flagship product, <strong>Blitz Identity Provider</strong>, powers seamless and resilient identity services for organizations handling millions of users and billions of transactions.
+                    Our flagship product, <strong>PremiumID Provider</strong>, powers seamless and resilient identity services for organizations handling millions of users and billions of transactions.
                   </p>
                 </div>
               </motion.div>
@@ -101,7 +101,7 @@ export default function CompanyPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12"
+              className="flex justify-center"
             >
               {/* Mikhail Card */}
               <motion.div
@@ -117,8 +117,8 @@ export default function CompanyPage() {
                   <div className="pt-8 flex justify-center">
                     <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-blue-200/60 shadow-md">
                       <img
-                        src="/vanin.jpeg"
-                        alt="Mikhail Vanin"
+                        src="/ChimaUzomba.jpeg"
+                        alt="Chima Uzomba"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -133,7 +133,7 @@ export default function CompanyPage() {
                       and billions of transactions»
                     </blockquote>
 
-                    <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
+                    {/* <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
                       <a href="mailto:mvanin@idblitz.com" className="hover:text-blue-700 transition-colors">
                         📧 mvanin@idblitz.com
                       </a>
@@ -143,13 +143,13 @@ export default function CompanyPage() {
                       <a href="#" className="hover:text-blue-700 transition-colors">
                         in mvanin
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               </motion.div>
 
               {/* Kirill Card */}
-              <motion.div
+              {/* <motion.div
                 variants={fadeInUp}
                 whileHover="hover"
                 initial="rest"
@@ -187,7 +187,7 @@ export default function CompanyPage() {
                     </div>
                   </div>
                 </motion.div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </section>

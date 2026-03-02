@@ -18,7 +18,7 @@ const features: FeatureCard[] = [
     description: "We bring clarity and control to AI agents, their users, and the tools they access.",
     link: "#",
     linkText: "Agent Identity Security",
-    imageSrc: "/sail1.jpg",
+    imageSrc: "/prem1.jpg",
   },
   {
     id: 2,
@@ -26,15 +26,15 @@ const features: FeatureCard[] = [
     description: "Gain clarity and context over access paths and entitlements with advanced visibility tools.",
     link: "#",
     linkText: "Observability & Insights",
-    imageSrc: "/sail2.png",
+    imageSrc: "/prem2.png",
   },
   {
     id: 3,
     title: "40-70% faster application onboarding",
     description: "Reduce application onboarding time and turn intelligence into prioritized governance.",
     link: "#",
-    linkText: "SailPoint Accelerated Application Management",
-    imageSrc: "/blitzhero.jpg",
+    linkText: "PremiumID Accelerated Application Management",
+    imageSrc: "/prem3.jpg",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function InnovationSection() {
             >
               {/* Active indicator bar */}
               <div
-                className={`absolute top-0 left-0 h-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full transition-all duration-500 ${
+                className={`absolute top-0 left-0 h-1 bg-gradient-to-r from-[#f0eab8] to-premium-accent rounded-full transition-all duration-500 ${
                   index === activeIndex ? 'w-full' : 'w-0'
                 }`}
               />
@@ -133,7 +133,7 @@ export default function InnovationSection() {
               onClick={() => setActiveIndex(index)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === activeIndex
-                  ? 'w-8 bg-blue-600'
+                  ? 'w-8 bg-premium-accent'
                   : 'w-2 bg-gray-300 hover:bg-gray-400'
               }`}
               aria-label={`Go to slide ${index + 1}`}

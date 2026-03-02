@@ -11,10 +11,10 @@ export default function OnePlatform() {
                 Unify identity, data, and security intelligence in real time with the SailPoint platform. Continuously assess risk, context, and behavior across all identities-human and non-human-to dynamically adjust access, automate decisions, and enforce least privilege as business and threats evolve.
                 </p>
                 <a
-                href="https://www.sailpoint.com/products/platform"
+                href="#"
                 className="inline-block bg-premium-accent text-white hover:bg-premium-accent/60 font-medium px-10 py-4 rounded-full text-lg transition-colors shadow-lg shadow-[#010534]/50"
                 >
-                Explore the SailPoint Platform
+                Explore the PremiumID Platform
                 </a>
             </div>
 
@@ -54,7 +54,7 @@ export default function OnePlatform() {
                     {/* Image - Increased size using w-full and scale */}
                     <div className="flex justify-center md:justify-end">
                     <img 
-                        src="/layeredcubes.png" 
+                        src="/layeredcube1.png" 
                         alt="3D Illustration" 
                         className="w-full max-w-[600px] h-auto transform scale-110 md:scale-125 object-contain" 
                     />

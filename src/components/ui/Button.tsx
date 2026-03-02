@@ -18,7 +18,7 @@ export default function Button({
   const baseStyles = "font-semibold rounded-full transition-all duration-200 inline-flex items-center justify-center gap-2";
   
   const variants = {
-    primary: "bg-premium-primary hover:bg-blue-700 text-white shadow-lg hover:shadow-xl",
+    primary: "bg-premium-accent hover:bg-cyan-600 text-white shadow-lg hover:shadow-xl",
     secondary: "bg-premium-secondary hover:bg-purple-700 text-white shadow-lg hover:shadow-xl",
     outline: "border-2 border-premium-primary text-premium-primary hover:bg-premium-primary hover:text-white",
     ghost: "text-premium-primary hover:bg-premium-light",
