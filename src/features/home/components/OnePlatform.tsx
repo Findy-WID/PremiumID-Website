@@ -61,7 +61,7 @@ export default function OnePlatform() {
   ];
 
   return (
-    <section className="relative bg-[#010534] py-24 px-6 overflow-hidden">
+    <section className="relative bg-[url('/oneplatform-bg.jpeg')] bg-cover bg-center bg-no-repeat py-24 px-6 overflow-hidden">
       {/* Background Glows for Depth */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600/10 blur-[120px] rounded-full" />
