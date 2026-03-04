@@ -14,24 +14,24 @@ interface FeatureCard {
 const features: FeatureCard[] = [
   {
     id: 1,
-    title: "80% of AI agents act beyond intent",
-    description: "We bring clarity and control to AI agents, their users, and the tools they access.",
+    title: "Almost all AI agents operate outside their intended scope.",
+    description: "We provide transparency and control for AI agents, their users, and the systems they interact with.",
     link: "#",
     linkText: "Agent Identity Security",
     imageSrc: "/prem1.jpg",
   },
   {
     id: 2,
-    title: "30% reduction in identity-related risks",
-    description: "Gain clarity and context over access paths and entitlements with advanced visibility tools.",
+    title: "Drive a reduction in identity-related risks.",
+    description: "Leverage advanced visibility tools to gain clear insight and context into access paths and entitlements",
     link: "#",
     linkText: "Observability & Insights",
     imageSrc: "/prem2.png",
   },
   {
     id: 3,
-    title: "40-70% faster application onboarding",
-    description: "Reduce application onboarding time and turn intelligence into prioritized governance.",
+    title: "Accelerate application onboarding faster than usual",
+    description: "Simplify and speed up the onboarding process while converting insights into focused, actionable governance.",
     link: "#",
     linkText: "PremiumID Accelerated Application Management",
     imageSrc: "/prem3.jpg",
@@ -55,7 +55,7 @@ export default function InnovationSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <h2 className="text-4xl md:text-5xl font-bold text-blue-900 text-center mb-12">
-          Innovation across every identity — human and beyond
+          Advancing Innovation For Humans And Emerging Digital Identities Alike.
         </h2>
 
         {/* Image Display Area - Shows image based on active card */}

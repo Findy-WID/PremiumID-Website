@@ -11,6 +11,9 @@ import ManufacturingPage from '../features/solutions/industries/ManufacturingPag
 import GovernmentPage from '../features/solutions/industries/GovernmentPage';
 import OilGasPage from '../features/solutions/industries/OilGasPage';
 import SingleSignOnPage from '../features/solutions/SingleSignonPage';
+import MultiFactorPage from '../features/solutions/MultiFactorPage';
+import PasswordlessPage from '../features/solutions/PasswordlessPage';
+import IdentityBrokeringPage from '../features/solutions/IdentityBrokeringPage';
 
 export default function AppRoutes() {
   return (
@@ -24,6 +27,10 @@ export default function AppRoutes() {
       <Route path="/solutions/industry/government" element={<GovernmentPage />} />
       <Route path="/solutions/industry/oil-gas" element={<OilGasPage />} />
       <Route path="/solutions/single-sign-on" element={<SingleSignOnPage />} />
+      <Route path="/solutions/multifactorless" element={<MultiFactorPage />} />
+      <Route path="/solutions/passwordless" element={<PasswordlessPage />} />
+      <Route path="/solutions/identitybrokering" element={<IdentityBrokeringPage />} />
+
       {/* <Route path="/resources/:resourceType" element={<ResourcesPage />} /> */}
       <Route path="/company" element={<CompanyPage />} />
       <Route path="/contact" element={<ContactPage />} />

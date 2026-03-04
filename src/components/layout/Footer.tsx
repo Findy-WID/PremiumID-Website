@@ -54,24 +54,24 @@ const Footer: FC = () => {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/solutions/single-sign-on" className="hover:text-white transition-colors">
+                <Link to="/solutions/single-sign-on" className="hover:text-white transition-colors">
                   Single Sign-On
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/solutions/multifactorless" className="hover:text-white transition-colors">
                   Multifactorless
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/solutions/passwordless" className="hover:text-white transition-colors">
                   Passwordless
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/solutions/identitybrokering" className="hover:text-white transition-colors">
                   Identity Brokering
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

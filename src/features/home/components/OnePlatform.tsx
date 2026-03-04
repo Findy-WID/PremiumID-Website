@@ -1,121 +1,133 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function OnePlatform() {
-  // 1. Define the data for each tab
-  const tabData = [
+  const platformFeatures = [
     {
       id: "Overview",
-      title: <>Adaptive identity security, <br /><span className="text-blue-600">powered in real time</span></>,
-      description: "Unify identity, data, and security intelligence in real time with PremiumID. Continuously assess risk, context, and behavior across all identities.",
-      image: "/layeredcube1.png" // Your existing image
+      title: "Adaptive Identity Security",
+      accent: "Real-time Power",
+      description: "Unify identity, data, and security intelligence in real time with PremiumID. Continuously assess risk and behavior.",
+      image: "/layeredcube1.png" 
     },
     {
       id: "Atlas",
-      title: <>Foundation of Identity, <br /><span className="text-blue-600">The Atlas Layer</span></>,
+      title: "Foundation of Identity",
+      accent: "The Atlas Layer",
       description: "The Atlas provides the mapping for all human and non-human identities across your entire cloud ecosystem.",
-      image: "https://placehold.co/600x400/010534/white?text=Atlas+Layer+Image"
+      image: "https://placehold.co/600x400/010534/white?text=Atlas+Layer"
     },
     {
       id: "Control plane",
-      title: <>Centralized Management, <br /><span className="text-blue-600">Control Plane</span></>,
+      title: "Centralized Management",
+      accent: "Control Plane",
       description: "Automate policy enforcement and least privilege access through a centralized intelligence layer.",
-      image: "https://placehold.co/600x400/010534/white?text=Control+Plane+Image"
+      image: "https://placehold.co/600x400/010534/white?text=Control+Plane"
     },
     {
       id: "Real-time plane",
-      title: <>Instant Assessment, <br /><span className="text-blue-600">The Security Plane</span></>,
+      title: "Instant Assessment",
+      accent: "Security Plane",
       description: "Analyze behavioral signals as they happen to block threats before they penetrate the perimeter.",
-      image: "https://placehold.co/600x400/010534/white?text=Real-time+Plane+Image"
+      image: "https://placehold.co/600x400/010534/white?text=Real-time+Plane"
     },
     {
       id: "Security plane",
-      title: <>Uncompromising Protection, <br /><span className="text-blue-600">Real-time Plane</span></>,
-      description: "Detect identity-based threats in real-time. Our security plane acts as an automated firewall for your users, isolating suspicious behavior before it can impact your data.",
-      image: "https://placehold.co/600x400/010534/white?text=Real-time+Plane+Image"
+      title: "Uncompromising Protection",
+      accent: "Real-time Plane",
+      description: "Detect identity-based threats in real-time. Our security plane acts as an automated firewall for your users.",
+      image: "https://placehold.co/600x400/010534/white?text=Security+Plane"
     },
     {
       id: "Customer success",
-      title: <>Expert Guidance, <br /><span className="text-blue-600">Tailored to Your Growth</span></>,
-      description: "Beyond technology, we provide a dedicated partnership. Our success team ensures PremiumID scales with your organization, optimizing your security posture every step of the way.",
-      image: "https://placehold.co/600x400/010534/white?text=Real-time+Plane+Image"
+      title: "Expert Guidance",
+      accent: "Tailored Growth",
+      description: "Beyond technology, we provide a dedicated partnership to ensure PremiumID scales with your organization.",
+      image: "https://placehold.co/600x400/010534/white?text=Customer+Success"
     },
     {
       id: "Agentic UX",
-      title: <>Intelligent Interaction, <br /><span className="text-blue-600">The Agentic UX</span></>,
-      description: "Frictionless security that learns. Our AI-driven experience anticipates user needs and automates authentication prompts based on intent and risk level.",
-      image: "https://placehold.co/600x400/010534/white?text=Real-time+Plane+Image"
+      title: "Intelligent Interaction",
+      accent: "The Agentic UX",
+      description: "Frictionless security that learns. Our AI-driven experience anticipates user needs and automates prompts.",
+      image: "https://placehold.co/600x400/010534/white?text=Agentic+UX"
     },
     {
       id: "Ecosystem",
-      title: <>Limitless Connectivity, <br /><span className="text-blue-600">A Unified Ecosystem</span></>,
-      description: "Connect everything. From legacy on-premise servers to the latest SaaS tools, our ecosystem creates a single fabric of identity across your entire technology stack.",
-      image: "https://placehold.co/600x400/010534/white?text=Real-time+Plane+Image"
-    },
-    // Add more here as you get the content...
+      title: "Limitless Connectivity",
+      accent: "Unified Ecosystem",
+      description: "Connect everything from legacy on-premise servers to the latest SaaS tools in a single fabric.",
+      image: "https://placehold.co/600x400/010534/white?text=Ecosystem"
+    }
   ];
 
-  // 2. Set the active state (default to first tab)
-  const [activeTab, setActiveTab] = useState(tabData[0]);
-
   return (
-    <section className="relative bg-gradient-to-br from-premium-accent to-[#f0eab8] text-white py-20 px-6">
-      <div className="mx-auto max-w-7xl">
+    <section className="relative bg-[#010534] py-24 px-6 overflow-hidden">
+      {/* Background Glows for Depth */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600/10 blur-[120px] rounded-full" />
+
+      <div className="mx-auto max-w-7xl relative z-10">
         
-        {/* Headline & CTA */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold leading-tight mb-6">
+        {/* Headline & Description */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
             One platform to secure every identity
           </h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-10">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Unify identity, data, and security intelligence in real time with PremiumID.
           </p>
-          <a href="#" className="inline-block bg-blue-600 text-white hover:bg-blue-700 font-medium px-10 py-4 rounded-full text-lg transition-all shadow-lg shadow-blue-500/20">
-            Explore the PremiumID Platform
-          </a>
         </div>
 
-        {/* --- TABS NAVIGATION --- */}
-        <div className="flex justify-center mb-12">
-          <div className="flex bg-white/20 backdrop-blur-md rounded-full p-1.5 border border-white/50 overflow-x-auto no-scrollbar max-w-full">
-            {tabData.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab)}
-                className={`whitespace-nowrap px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  activeTab.id === tab.id 
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg" 
-                  : "text-gray-400 hover:text-white"
-                }`}
-              >
-                {tab.id}
-              </button>
-            ))}
-           
-          </div>
+        {/* --- SCROLLABLE FEATURE CARDS --- */}
+        {/* On mobile: horizontal scroll (snap)
+          On desktop: clean 3 or 4 column grid
+        */}
+        <div className="flex overflow-x-auto pb-12 gap-6 no-scrollbar snap-x snap-mandatory lg:grid lg:grid-cols-3 xl:grid-cols-4 lg:overflow-visible lg:pb-0">
+          {platformFeatures.map((feature) => (
+            <div 
+              key={feature.id}
+              className="min-w-[85vw] md:min-w-[40vw] lg:min-w-0 snap-center group"
+            >
+              <div className="bg-white/5 border border-white/10 rounded-[2.5rem] p-8 h-full flex flex-col hover:bg-white/10 transition-all duration-500 hover:-translate-y-2">
+                
+                {/* Image at Top */}
+                <div className="mb-8 overflow-hidden rounded-2xl aspect-video flex items-center justify-center bg-[#010534]/50">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.id} 
+                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="flex-grow">
+                  <span className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-3 block">
+                    {feature.accent}
+                  </span>
+                  <h3 className="text-2xl font-bold text-white mb-4 leading-snug">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed text-sm">
+                    {feature.description}
+                  </p>
+                </div>
+
+                {/* Optional "Learn More" link for each card */}
+                {/* <div className="mt-8 flex items-center text-white/50 group-hover:text-blue-400 transition-colors text-sm font-semibold cursor-pointer">
+                  Learn more <ArrowRight size={16} className="ml-2 group-hover:translate-x-2 transition-transform" />
+                </div> */}
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* --- CONTENT AREA (Changes based on State) --- */}
-        <div className="grid md:grid-cols-2 gap-12 items-center min-h-[450px]">
-          
-          {/* Left Side: Text Content */}
-          <div key={activeTab.id} className="space-y-6 animate-in fade-in slide-in-from-left-4 duration-500">
-            <h2 className="text-white text-4xl md:text-5xl font-bold leading-tight">
-              {activeTab.title}
-            </h2>
-            <p className="text-gray-500 text-lg leading-relaxed">
-              {activeTab.description}
-            </p>
-          </div>
-
-          {/* Right Side: Image Content */}
-          <div className="flex justify-center md:justify-end overflow-hidden">
-            <img 
-              key={activeTab.id} // Key here forces React to re-render the image for animations
-              src={activeTab.image} 
-              alt={activeTab.id} 
-              className="w-full max-w-[550px] h-auto transform scale-110 md:scale-125 object-contain animate-in zoom-in-95 duration-500" 
-            />
-          </div>
+        {/* --- SUGGESTED CTA --- */}
+        <div className="mt-20 text-center">
+          <Link 
+           to="/contact"
+           className="bg-[#f0eab8] text-[#010534] px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(240,234,184,0.3)] transition-all">
+                  Talk to an Identity Expert
+          </Link>
         </div>
 
       </div>
