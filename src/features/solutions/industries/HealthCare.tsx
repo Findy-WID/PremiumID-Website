@@ -4,7 +4,7 @@ export default function HealthcarePage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-premium-dark via-blue-900 to-premium-primary text-white py-20 pt-32 px-6">
+      <section className="relative bg-[#accent text-white py-20 pt-32 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">HIPAA-Compliant Identity Security for Healthcare</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -141,19 +141,19 @@ export default function HealthcarePage() {
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Healthcare Results</h2>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">100%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">100%</div>
               <p className="text-gray-600 font-medium">HIPAA audit readiness</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">60%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">60%</div>
               <p className="text-gray-600 font-medium">Faster clinician onboarding</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">Zero</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">Zero</div>
               <p className="text-gray-600 font-medium">Unauthorized access incidents</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">40%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">40%</div>
               <p className="text-gray-600 font-medium">Reduction in compliance costs</p>
             </div>
           </div>
@@ -161,13 +161,13 @@ export default function HealthcarePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-premium-dark via-premium-primary to-premium-secondary text-white">
+      <section className="py-20 px-6 bg-[#010534] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Protect Patient Data with Confidence</h2>
           <p className="text-xl text-gray-300 mb-8">
             Join leading health systems using PremiumID for HIPAA-compliant identity security.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-primary font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
           </a>
         </div>

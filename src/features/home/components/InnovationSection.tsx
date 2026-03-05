@@ -1,6 +1,6 @@
 // src/components/InnovationSection.tsx
 import { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
+// import { ArrowRight } from 'lucide-react';
 
 interface FeatureCard {
   id: number;
@@ -8,7 +8,7 @@ interface FeatureCard {
   description: string;
   link: string;
   linkText: string;
-  imageSrc: string; // Path to the associated image for this feature
+  imageSrc: string; 
 }
 
 const features: FeatureCard[] = [
@@ -107,7 +107,6 @@ export default function InnovationSection() {
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {feature.description}
-                  <sup className="text-blue-600 text-xs ml-0.5">{index + 1}</sup>
                 </p>
                 <a
                   href={feature.link}
@@ -117,8 +116,8 @@ export default function InnovationSection() {
                       : 'text-gray-500 hover:text-blue-600'
                   }`}
                 >
-                  {feature.linkText}
-                  <ArrowRight className="h-4 w-4" />
+                  {/* {feature.linkText}
+                  <ArrowRight className="h-4 w-4" /> */}
                 </a>
               </div>
             </div>

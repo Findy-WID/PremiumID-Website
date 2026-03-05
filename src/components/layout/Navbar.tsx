@@ -30,6 +30,7 @@ export default function Navbar() {
   }, []);
 
   const handleMouseEnter = (menu: string) => setOpenDropdown(menu);
+  const handleMouseLeave = () => setOpenDropdown(null);
   
   const toggleMobileDropdown = (menu: string) => {
     setMobileDropdown(mobileDropdown === menu ? null : menu);
@@ -103,40 +104,116 @@ export default function Navbar() {
               Solutions <span className="text-xs">▼</span>
             </button>
             {openDropdown === 'solutions' && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[400px] bg-white text-gray-800 rounded-lg shadow-xl p-6 border border-gray-200">
-                <h4 className="font-bold text-gray-900 mb-4">By Industry</h4>
-                <ul className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
-                  <li>
-                    <Link to="/solutions/industry/financial-services" className="text-gray-700 hover:text-premium-accent transition-colors" onClick={() => setOpenDropdown(null)}>
-                      Financial Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/solutions/industry/healthcare" className="text-gray-700 hover:text-premium-accent transition-colors" onClick={() => setOpenDropdown(null)}>
-                      Healthcare
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/solutions/industry/manufacturing" className="text-gray-700 hover:text-premium-accent transition-colors" onClick={() => setOpenDropdown(null)}>
-                      Manufacturing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/solutions/industry/government" className="text-gray-700 hover:text-premium-accent transition-colors" onClick={() => setOpenDropdown(null)}>
-                      Government
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/solutions/industry/oil-gas" className="text-gray-700 hover:text-premium-accent transition-colors" onClick={() => setOpenDropdown(null)}>
-                      Oil and Gas
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/solutions/industry/education" className="text-gray-700 hover:text-premium-accent transition-colors" onClick={() => setOpenDropdown(null)}>
-                      Education
-                    </Link>
-                  </li>
-                </ul>
+              <div 
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white text-gray-800 rounded-lg shadow-xl p-6 border border-gray-200"
+                onMouseEnter={() => handleMouseEnter('solutions')}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="grid grid-cols-2 gap-8">
+                  {/* By Industry */}
+                  <div>
+                    <h4 className="font-bold text-gray-900 mb-4">By Industry</h4>
+                    <ul className="space-y-3 text-sm">
+                      <li>
+                        <Link 
+                          to="/solutions/industry/financial-services" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Financial Services
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/industry/healthcare" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Healthcare
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/industry/manufacturing" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Manufacturing
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/industry/government" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Government
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/industry/oil-gas" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Oil and Gas
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/industry/education" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Education
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* By Use Case */}
+                  <div>
+                    <h4 className="font-bold text-gray-900 mb-4">By Use Case</h4>
+                    <ul className="space-y-3 text-sm">
+                      <li>
+                        <Link 
+                          to="/solutions/single-sign-on" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Single Sign-On
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/multifactorless" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Multi-Factor Authentication
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/passwordless" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Passwordless
+                        </Link>
+                      </li>
+                      <li>
+                        <Link 
+                          to="/solutions/identitybrokering" 
+                          className="text-gray-700 hover:text-premium-accent transition-colors" 
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          Identity Brokering
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             )}
           </div>

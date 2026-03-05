@@ -33,7 +33,7 @@ export default function CompanyPage() {
 
       <main className="min-h-screen bg-gray-50">
         {/* Gradient Hero - Image left, Text right */}
-        <section className="m-5 relative overflow-hidden bg-gradient-to-br from-blue-300 via-blue-700 to-cyan-300 text-white">
+        <section className="m-5 relative overflow-hidden bg-[#010534] text-white">
           {/* Subtle overlay if needed – adjust opacity */}
           <div className="absolute inset-0 bg-black/20" />
 

@@ -35,14 +35,14 @@ const Footer: FC = () => {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/products/provider" className="hover:text-white transition-colors">
                   Premium Identity Provider
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/products/smartcard" className="hover:text-white transition-colors">
                   Premium Smart Card Plugin
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

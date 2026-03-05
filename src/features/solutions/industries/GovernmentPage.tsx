@@ -4,7 +4,7 @@ export default function GovernmentPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-premium-dark via-blue-900 to-premium-primary text-white py-20 pt-32 px-6">
+      <section className="relative bg-[#010534] text-white py-20 pt-32 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">FICAM-Compliant Identity for Government</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
@@ -141,19 +141,19 @@ export default function GovernmentPage() {
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Government Results</h2>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">100%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">100%</div>
               <p className="text-gray-600 font-medium">FISMA compliance achievement</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">80%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">80%</div>
               <p className="text-gray-600 font-medium">Faster audit preparation</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">60%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">60%</div>
               <p className="text-gray-600 font-medium">Reduction in identity management costs</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">Zero</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">Zero</div>
               <p className="text-gray-600 font-medium">Compliance violations</p>
             </div>
           </div>
@@ -161,13 +161,13 @@ export default function GovernmentPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-premium-dark via-premium-primary to-premium-secondary text-white">
+      <section className="py-20 px-6 bg-[#010534] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Meet Federal Security Mandates</h2>
           <p className="text-xl text-gray-300 mb-8">
             Join government agencies that trust PremiumID for FICAM-compliant identity security.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-primary font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
           </a>
         </div>
