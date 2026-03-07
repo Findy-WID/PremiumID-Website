@@ -1,4 +1,5 @@
 import PageLayout from '../../../components/layout/PageLayout';
+import { Link } from 'react-router-dom';
 
 export default function ManufacturingPage() {
   return (
@@ -12,9 +13,9 @@ export default function ManufacturingPage() {
             with enterprise identity governance for manufacturers.
           </p>
           <div className="flex gap-4 justify-center">
-            <a href="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
+            <Link to="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
               Request Demo
-            </a>
+            </Link>
             <a href="#challenges" className="px-8 py-3 border border-white/40 rounded-full font-medium hover:bg-white/10 transition-colors">
               Learn More
             </a>
@@ -167,9 +168,9 @@ export default function ManufacturingPage() {
           <p className="text-xl text-gray-300 mb-8">
             Join industry leaders using PremiumID to protect intellectual property and enable Industry 4.0.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <Link to="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>

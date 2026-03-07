@@ -1,4 +1,5 @@
 import PageLayout from '../../../components/layout/PageLayout';
+import { Link } from 'react-router-dom';
 
 export default function OilGasPage() {
   return (
@@ -6,15 +7,15 @@ export default function OilGasPage() {
       {/* Hero */}
       <section className="relative bg-[#010534] text-white py-20 pt-32 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">Identity Security for Oil & Gas</h1>
+          <h1 className="text-5xl md:texFt-6xl font-bold mb-6">Identity Security for Oil & Gas</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             Protect critical infrastructure and secure remote operations with identity governance 
             built for upstream, midstream, and downstream energy companies.
           </p>
           <div className="flex gap-4 justify-center">
-            <a href="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
+            <Link to="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
               Request Demo
-            </a>
+            </Link>
             <a href="#challenges" className="px-8 py-3 border border-white/40 rounded-full font-medium hover:bg-white/10 transition-colors">
               Learn More
             </a>
@@ -48,7 +49,7 @@ export default function OilGasPage() {
             <div className="bg-white p-6 rounded-xl border border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Regulatory Compliance</h3>
               <p className="text-gray-600">
-                Meeting NERC CIP, TSA directives, and international energy security standards.
+                Meeting CIP, TSA directives, and international energy security standards.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-gray-200">
@@ -104,9 +105,9 @@ export default function OilGasPage() {
 
             <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all">
               <div className="text-5xl mb-4">🔒</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">NERC CIP Compliance</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">CIP Compliance</h3>
               <p className="text-gray-600 mb-4">
-                Meet North American Electric Reliability Corporation Critical Infrastructure Protection 
+                Critical Infrastructure Protection 
                 standards with automated controls.
               </p>
               <ul className="text-sm text-gray-600 space-y-2">
@@ -150,7 +151,7 @@ export default function OilGasPage() {
             </div>
             <div>
               <div className="text-5xl font-bold text-premium-accent mb-2">100%</div>
-              <p className="text-gray-600 font-medium">NERC CIP compliance</p>
+              <p className="text-gray-600 font-medium">CIP compliance</p>
             </div>
             <div>
               <div className="text-5xl font-bold text-premium-accent mb-2">60%</div>
@@ -167,9 +168,9 @@ export default function OilGasPage() {
           <p className="text-xl text-gray-300 mb-8">
             Join leading energy companies that trust PremiumID for critical infrastructure security.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <Link to="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>

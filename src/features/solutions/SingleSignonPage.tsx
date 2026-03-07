@@ -1,5 +1,6 @@
 import PageLayout from '../../components/layout/PageLayout';
 import { ShieldCheck, UserCheck, Zap, Server, Share2, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function SingleSignOnPage() {
   const benefits = [
@@ -127,9 +128,9 @@ export default function SingleSignOnPage() {
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to simplify your workflow?</h2>
                 <p className="text-blue-200 mb-10 max-w-xl mx-auto">Get started with Premium ID's Single Sign-On and improve your company's security today.</p>
-                <button className="bg-[#f0eab8] text-[#010534] px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+                <Link to="/contact" className="bg-[#f0eab8] text-[#010534] px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
                   Request a Technical Consultation
-                </button>
+                </Link>
               </div>
               {/* Subtle background decoration */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[100px] rounded-full"></div>

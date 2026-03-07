@@ -1,10 +1,11 @@
 import PageLayout from '../../../components/layout/PageLayout';
+import { Link } from 'react-router-dom';
 
 export default function SmartCardPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-premium-dark via-blue-900 to-premium-primary text-white py-20 pt-32 px-6">
+      <section className="relative bg-[#010534] text-white py-20 pt-32 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <p className='text-gray-400 mb-5 text-m'>
             Passwordless hardware authentication with smart cards and security keys. 
@@ -17,9 +18,9 @@ export default function SmartCardPage() {
             If your website requires the ability to strong authenticate users using their hardware keys, our solution allows the browser to retrieve data about the certificate and lets user sign the authentication challenge.
           </p>
           <div className="flex gap-4 justify-center">
-            <a href="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
+            <Link to="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
               Request Demo
-            </a>
+            </Link>
             <a href="#features" className="px-8 py-3 border border-white/40 rounded-full font-medium hover:bg-white/10 transition-colors">
               View Features
             </a>
@@ -187,15 +188,15 @@ export default function SmartCardPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-premium-dark via-premium-primary to-premium-secondary text-white">
+      <section className="py-20 px-6 bg-[#010534] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Ready for Passwordless Security?</h2>
           <p className="text-xl text-gray-300 mb-8">
             See how PremiumID Smart Card Plugin can eliminate passwords in your organization.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-primary font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <Link to="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>

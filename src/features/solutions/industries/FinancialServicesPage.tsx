@@ -1,4 +1,5 @@
 import PageLayout from '../../../components/layout/PageLayout';
+import { Link } from 'react-router-dom';
 
 export default function FinancialServicesPage() {
   return (
@@ -12,9 +13,9 @@ export default function FinancialServicesPage() {
             built for banking, insurance, and fintech.
           </p>
           <div className="flex gap-4 justify-center">
-            <a href="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
+            <Link to="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
               Request Demo
-            </a>
+            </Link>
             <a href="#challenges" className="px-8 py-3 border border-white/40 rounded-full font-medium hover:bg-white/10 transition-colors">
               Learn More
             </a>
@@ -167,9 +168,9 @@ export default function FinancialServicesPage() {
           <p className="text-xl text-gray-300 mb-8">
             See how leading banks and fintech companies trust PremiumID to protect their customers.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <Link to="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>

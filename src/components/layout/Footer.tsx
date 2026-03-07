@@ -59,8 +59,8 @@ const Footer: FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/solutions/multifactorless" className="hover:text-white transition-colors">
-                  Multifactorless
+                <Link to="/solutions/multifactor" className="hover:text-white transition-colors">
+                  Multi-Factor
                 </Link>
               </li>
               <li>

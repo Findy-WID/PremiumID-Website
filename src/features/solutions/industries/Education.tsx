@@ -1,4 +1,5 @@
 import PageLayout from '../../../components/layout/PageLayout';
+import { Link } from 'react-router-dom';
 
 export default function EducationPage() {
   return (
@@ -8,13 +9,13 @@ export default function EducationPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Identity Security for Higher Education</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Simplify student and faculty access while protecting research data and meeting FERPA compliance 
+            Simplify student and faculty access while protecting research data and meeting compliance 
             for universities and K-12 schools.
           </p>
           <div className="flex gap-4 justify-center">
-            <a href="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
+            <Link to="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
               Request Demo
-            </a>
+            </Link>
             <a href="#challenges" className="px-8 py-3 border border-white/40 rounded-full font-medium hover:bg-white/10 transition-colors">
               Learn More
             </a>
@@ -34,7 +35,7 @@ export default function EducationPage() {
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-gray-200">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">FERPA Compliance</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Compliance</h3>
               <p className="text-gray-600">
                 Protecting student privacy and educational records in accordance with federal regulations.
               </p>
@@ -89,10 +90,10 @@ export default function EducationPage() {
 
             <div className="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all">
               <div className="text-5xl mb-4">📋</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">FERPA Compliance</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Compliance</h3>
               <p className="text-gray-600 mb-4">
                 Automatic access controls based on student privacy rules and directory information restrictions. 
-                Ensure FERPA compliance across all systems.
+                Ensure compliance across all systems.
               </p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>✓ Directory information restrictions</li>
@@ -177,19 +178,19 @@ export default function EducationPage() {
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Education Results</h2>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">50,000+</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">50,000+</div>
               <p className="text-gray-600 font-medium">Students provisioned in days</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">100%</div>
-              <p className="text-gray-600 font-medium">FERPA compliance</p>
+              <div className="text-5xl font-bold text-premium-accent mb-2">100%</div>
+              <p className="text-gray-600 font-medium">compliance</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">75%</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">75%</div>
               <p className="text-gray-600 font-medium">Reduction in password reset tickets</p>
             </div>
             <div>
-              <div className="text-5xl font-bold text-premium-primary mb-2">200+</div>
+              <div className="text-5xl font-bold text-premium-accent mb-2">200+</div>
               <p className="text-gray-600 font-medium">Campus apps with SSO</p>
             </div>
           </div>
@@ -234,15 +235,15 @@ export default function EducationPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 bg-gradient-to-br from-premium-dark via-premium-primary to-premium-secondary text-white">
+      <section className="py-20 px-6 bg-[#010534] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Transform Your Campus Digital Experience</h2>
           <p className="text-xl text-gray-300 mb-8">
             Join leading universities and K-12 schools using PremiumID for secure, seamless access.
           </p>
-          <a href="/contact" className="inline-block px-10 py-4 bg-white text-premium-primary font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <Link to="/contact" className="inline-block px-10 py-4 bg-whiteaccent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>

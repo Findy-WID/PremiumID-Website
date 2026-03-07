@@ -173,7 +173,7 @@ export default function Navbar() {
 
                   {/* By Use Case */}
                   <div>
-                    <h4 className="font-bold text-gray-900 mb-4">By Use Case</h4>
+                    <h4 className="font-bold text-gray-900 mb-4">Identity & Auenticationth</h4>
                     <ul className="space-y-3 text-sm">
                       <li>
                         <Link 
