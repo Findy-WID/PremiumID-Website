@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import PageLayout from '../../../components/layout/PageLayout';
-import { Link } from 'react-router-dom';
+import DemoModal from '../../../components/ui/DemoModal';
 
 export default function HealthcarePage() {
+  const [demoOpen, setDemoOpen] = useState(false);
   return (
     <PageLayout>
       {/* Hero */}
@@ -13,9 +15,9 @@ export default function HealthcarePage() {
             for hospitals, clinics, and health systems.
           </p>
           <div className="flex gap-4 justify-center">
-            <Link to="/contact" className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
+            <button onClick={() => setDemoOpen(true)} className="px-8 py-3 bg-premium-accent rounded-full font-medium hover:bg-cyan-600 transition-colors">
               Request Demo
-            </Link>
+            </button>
             <a href="#challenges" className="px-8 py-3 border border-white/40 rounded-full font-medium hover:bg-white/10 transition-colors">
               Learn More
             </a>
@@ -168,11 +170,12 @@ export default function HealthcarePage() {
           <p className="text-xl text-gray-300 mb-8">
             Join leading health systems using PremiumID for HIPAA-compliant identity security.
           </p>
-          <Link to="/contact" className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
+          <button onClick={() => setDemoOpen(true)} className="inline-block px-10 py-4 bg-white text-premium-accent font-semibold rounded-full text-lg hover:bg-gray-100 transition-colors">
             Schedule a Demo
-          </Link>
+          </button>
         </div>
       </section>
+      <DemoModal isOpen={demoOpen} onClose={() => setDemoOpen(false)} industry="healthcare" />
     </PageLayout>
   );
 }

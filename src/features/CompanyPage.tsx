@@ -90,7 +90,7 @@ export default function CompanyPage() {
               viewport={{ once: true }}
               className="text-center text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
             >
-              Our Management
+              Our Leadership
             </motion.h2>
              <p className="opacity-90 mb-10 text-center">
                   Meet our experienced leadership driving secure, high-performance identity solutions.
@@ -101,19 +101,11 @@ export default function CompanyPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex justify-center"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-8"
             >
-              {/* Mikhail Card */}
-              <motion.div
-                variants={fadeInUp}
-                whileHover="hover"
-                initial="rest"
-                className="group"
-              >
-                <motion.div
-                  variants={cardHover}
-                  className="bg-gray-50 rounded-2xl overflow-hidden shadow-md h-full flex flex-col transition-shadow"
-                >
+              {/* Card 1 — Chima Uzomba */}
+              <motion.div variants={fadeInUp} whileHover="hover" initial="rest" className="group">
+                <motion.div variants={cardHover} className="bg-gray-50 rounded-2xl overflow-hidden shadow-md h-full flex flex-col transition-shadow">
                   <div className="pt-8 flex justify-center">
                     <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-blue-200/60 shadow-md">
                       <img
@@ -123,71 +115,82 @@ export default function CompanyPage() {
                       />
                     </div>
                   </div>
-
                   <div className="p-6 text-center flex flex-col flex-grow">
                     <h3 className="text-xl font-bold text-gray-900">Chima Uzomba</h3>
-                    <p className="text-blue-600 font-medium mt-1">Chief Revenue Officer</p>
-
+                    <p className="text-blue-600 font-medium mt-1">Chief Revenue Officer (Africa)</p>
                     <blockquote className="mt-5 italic text-gray-700 text-sm flex-grow">
                       «We make highly loaded and reactive system of identification and authentication with millions of users
                       and billions of transactions»
                     </blockquote>
-
-                    {/* <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
-                      <a href="mailto:mvanin@idblitz.com" className="hover:text-blue-700 transition-colors">
-                        📧 mvanin@idblitz.com
-                      </a>
-                      <a href="#" className="hover:text-blue-700 transition-colors">
-                        🔵 MikhailVanin
-                      </a>
-                      <a href="#" className="hover:text-blue-700 transition-colors">
-                        in mvanin
-                      </a>
-                    </div> */}
                   </div>
                 </motion.div>
               </motion.div>
 
-              {/* Kirill Card */}
-              {/* <motion.div
-                variants={fadeInUp}
-                whileHover="hover"
-                initial="rest"
-                className="group"
-              >
-                <motion.div
-                  variants={cardHover}
-                  className="bg-gray-50 rounded-2xl overflow-hidden shadow-md h-full flex flex-col transition-shadow"
-                >
+              {/* Card 2 — Placeholder (replace src and details with real data) */}
+              <motion.div variants={fadeInUp} whileHover="hover" initial="rest" className="group">
+                <motion.div variants={cardHover} className="bg-gray-50 rounded-2xl overflow-hidden shadow-md h-full flex flex-col transition-shadow">
                   <div className="pt-8 flex justify-center">
                     <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-blue-200/60 shadow-md">
                       <img
-                        src="/kirill.jpeg"
-                        alt="Kirill Gavrilov"
+                        src="/paresh.jpeg"
+                        alt="paresh"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
                   </div>
-
                   <div className="p-6 text-center flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-gray-900">Kirill Gavrilov</h3>
-                    <p className="text-blue-600 font-medium mt-1">Chief Operating Officer</p>
-
+                    <h3 className="text-xl font-bold text-gray-900">Paresh Makwana</h3>
+                    <p className="text-blue-600 font-medium mt-1">Chief Revenue Officer (Middle East)</p>
                     <blockquote className="mt-5 italic text-gray-700 text-sm flex-grow">
                       «Our experienced team is aimed at developing software that solves real problems»
                     </blockquote>
-
-                    <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
-                      <a href="mailto:kgavrilov@idblitz.com" className="hover:text-blue-700 transition-colors">
-                        📧 kgavrilov@idblitz.com
-                      </a>
-                      <a href="#" className="hover:text-blue-700 transition-colors">
-                        🔵 KirillGavrilov
-                      </a>
-                    </div>
                   </div>
                 </motion.div>
-              </motion.div> */}
+              </motion.div>
+
+              {/* Card 3 — Placeholder (replace src and details with real data) */}
+              <motion.div variants={fadeInUp} whileHover="hover" initial="rest" className="group">
+                <motion.div variants={cardHover} className="bg-gray-50 rounded-2xl overflow-hidden shadow-md h-full flex flex-col transition-shadow">
+                  <div className="pt-8 flex justify-center">
+                    <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-blue-200/60 shadow-md">
+                      <img
+                        src="/prisca.jpeg"
+                        alt="prisca"
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900">Chinyere Prisca </h3>
+                    <p className="text-blue-600 font-medium mt-1">Channel Director</p>
+                    <blockquote className="mt-5 italic text-gray-700 text-sm flex-grow">
+                      «We believe secure identity is the foundation of every great digital experience»
+                    </blockquote>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+              {/* Card 4 — Placeholder (replace src and details with real data) */}
+              <motion.div variants={fadeInUp} whileHover="hover" initial="rest" className="group">
+                <motion.div variants={cardHover} className="bg-gray-50 rounded-2xl overflow-hidden shadow-md h-full flex flex-col transition-shadow">
+                  <div className="pt-8 flex justify-center">
+                    <div className="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-blue-200/60 shadow-md">
+                      <img
+                        src="/chuks.jpeg"
+                        alt="Team Member 4"
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900">Chuks</h3>
+                    <p className="text-blue-600 font-medium mt-1">Chief Technology Officer</p>
+                    <blockquote className="mt-5 italic text-gray-700 text-sm flex-grow">
+                      «Innovation in identity management is what keeps enterprises secure and agile»
+                    </blockquote>
+                  </div>
+                </motion.div>
+              </motion.div>
             </motion.div>
           </div>
         </section>

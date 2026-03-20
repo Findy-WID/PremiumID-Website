@@ -1,12 +1,33 @@
 @import "tailwindcss";
 
-/* styles/globals.css or tailwind.css */
+/* Float animation */
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(3deg); }
 }
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Leaflet marker pulsating glow - TARGET THE SVG PATHS DIRECTLY */
+@keyframes markerPulse {
+  0%, 100% { 
+    filter: drop-shadow(0 0 4px rgba(6, 182, 212, 0.8));
+  }
+  50% { 
+    filter: drop-shadow(0 0 12px rgba(6, 182, 212, 1)) 
+            drop-shadow(0 0 24px rgba(6, 182, 212, 0.6));
+  }
+}
+
+/* Apply to ALL Leaflet CircleMarker paths */
+.leaflet-interactive[fill="#06b6d4"] {
+  animation: markerPulse 2.5s ease-in-out infinite;
+}
+
+/* OR target by custom class if you add it to pathOptions */
+path.coverage-marker {
+  animation: markerPulse 2.5s ease-in-out infinite;
 }
 
 @theme {

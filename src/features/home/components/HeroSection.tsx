@@ -46,7 +46,7 @@ export default function HeroSection() {
             {/* Left Side: Stays exactly as you had it */}
             <div className="w-full md:w-3/5 text-center md:text-left">
               <h1 className="inline-block bg-gradient-to-br from-premium-accent to-[#f0eab8] bg-clip-text text-transparent text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6">
-                Premium Identity Provider
+                Premium Identity & Access Management
               </h1>
               <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-xl mx-auto md:mx-0">
                 Use only one account to log in to all of your company’s websites and mobile applications. 

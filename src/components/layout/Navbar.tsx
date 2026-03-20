@@ -291,13 +291,23 @@ export default function Navbar() {
               <span className={`text-xs transition-transform ${mobileDropdown === 'solutions' ? 'rotate-180' : ''}`}>▼</span>
             </button>
             {mobileDropdown === 'solutions' && (
-              <div className="pl-4 mt-2 space-y-2 border-l-2 border-premium-accent">
-                <Link to="/solutions/industry/financial-services" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Financial Services</Link>
-                <Link to="/solutions/industry/healthcare" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Healthcare</Link>
-                <Link to="/solutions/industry/manufacturing" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Manufacturing</Link>
-                <Link to="/solutions/industry/government" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Government</Link>
-                <Link to="/solutions/industry/oil-gas" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Oil and Gas</Link>
-                <Link to="/solutions/industry/education" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Education</Link>
+              <div className="pl-4 mt-2 border-l-2 border-premium-accent">
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-wider py-2">Identity & Authentication</p>
+                <div className="space-y-2 mb-3">
+                  <Link to="/solutions/single-sign-on" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Single Sign-On</Link>
+                  <Link to="/solutions/multifactor" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Multi-Factor Authentication</Link>
+                  <Link to="/solutions/passwordless" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Passwordless</Link>
+                  <Link to="/solutions/identitybrokering" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Identity Brokering</Link>
+                </div>
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-wider py-2 border-t border-gray-100">Industry Applications</p>
+                <div className="space-y-2">
+                  <Link to="/solutions/industry/financial-services" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Financial Services</Link>
+                  <Link to="/solutions/industry/healthcare" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Healthcare</Link>
+                  <Link to="/solutions/industry/manufacturing" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Manufacturing</Link>
+                  <Link to="/solutions/industry/government" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Government</Link>
+                  <Link to="/solutions/industry/oil-gas" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Oil and Gas</Link>
+                  <Link to="/solutions/industry/education" className="block text-sm text-gray-600 hover:text-premium-accent py-1" onClick={() => setMobileMenuOpen(false)}>Education</Link>
+                </div>
               </div>
             )}
           </div>
