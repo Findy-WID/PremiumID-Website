@@ -95,7 +95,7 @@ export default function OnePlatform() {
                   <img
                     src={feature.image}
                     alt={feature.id}
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
 
@@ -142,6 +142,7 @@ export default function OnePlatform() {
               <a
                 href="https://emt.gartnerweb.com/ngw/eventassets/en/conferences/2026/iam21/documents/gartner-na-iam-executive-summary.pdf"
                 className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-white transition-colors"
+                target='_blank'
               >
                 Read Now
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

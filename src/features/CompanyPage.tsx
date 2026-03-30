@@ -50,7 +50,7 @@ export default function CompanyPage() {
                 className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-auto lg:h-[500px]"
               >
                 <img
-                  src="/prem3.jpg"
+                  src="/companyHeroImg.jpeg"
                   alt="Digital network connections representing secure identity bridges"
                   className="w-full h-full object-cover"
                 />
