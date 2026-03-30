@@ -183,7 +183,7 @@ export default function CompanyPage() {
                     </div>
                   </div>
                   <div className="p-6 text-center flex flex-col flex-grow">
-                    <h3 className="text-xl font-bold text-gray-900">Chuks</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Chuks Kingsley</h3>
                     <p className="text-blue-600 font-medium mt-1">Chief Technology Officer</p>
                     <blockquote className="mt-5 italic text-gray-700 text-sm flex-grow">
                       «Innovation in identity management is what keeps enterprises secure and agile»

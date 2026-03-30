@@ -110,7 +110,7 @@ export default function DemoModal({ isOpen, onClose, industry }: DemoModalProps)
           email: formData.email,
           phone: formData.phone,
           demoDate: formData.demoDate,
-          demoTime: formData.demoTime,
+          demoTime: `${formData.demoTime} GMT`,
           industry: industry
             ? industry.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
             : 'Not specified',
@@ -164,7 +164,7 @@ export default function DemoModal({ isOpen, onClose, industry }: DemoModalProps)
   const today = new Date().toISOString().split('T')[0];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
       <div className="bg-white rounded-2xl shadow-xl max-w-lg w-full relative animate-fadeIn max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button
@@ -188,6 +188,13 @@ export default function DemoModal({ isOpen, onClose, industry }: DemoModalProps)
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="p-6 space-y-4" noValidate>
+          {/* Timezone notice */}
+          <div className="p-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg">
+            <p className="text-sm text-cyan-700">
+              ⏰ Please provide your preferred date and time in GMT/UTC timezone
+            </p>
+          </div>
+
           {/* Name row */}
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -275,7 +282,7 @@ export default function DemoModal({ isOpen, onClose, industry }: DemoModalProps)
             </div>
             <div>
               <label htmlFor="demoTime" className="block text-sm font-medium text-gray-700 mb-1">
-                Preferred time *
+                Preferred time (GMT) *
               </label>
               <input
                 type="time"
@@ -285,6 +292,7 @@ export default function DemoModal({ isOpen, onClose, industry }: DemoModalProps)
                 onChange={handleChange}
                 className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-premium-accent focus:border-transparent outline-none transition-all ${errors.demoTime ? 'border-red-400 bg-red-50' : 'border-gray-300'}`}
               />
+              <p className="text-xs text-gray-500 mt-1">Greenwich Mean Time (UTC+0)</p>
               {errors.demoTime && <p className="text-xs text-red-500 mt-1">{errors.demoTime}</p>}
             </div>
           </div>

@@ -79,7 +79,7 @@ export default function Navbar() {
                     </Link>
                     <p className="text-xs text-gray-500 mt-1">Complete IAM solution</p>
                   </li>
-                  <li className="pt-3 border-t border-gray-200">
+                  {/* <li className="pt-3 border-t border-gray-200">
                     <Link 
                       to="/products/smartcard" 
                       className="block text-gray-700 hover:text-premium-accent font-medium transition-colors"
@@ -88,7 +88,7 @@ export default function Navbar() {
                       PremiumID Smart Card Plugin
                     </Link>
                     <p className="text-xs text-gray-500 mt-1">Hardware authentication</p>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             )}
