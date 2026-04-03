@@ -64,16 +64,16 @@ export default function CompanyPage() {
                   PREMIUM ID
                 </h1>
 
-                <p className="text-base sm:text-lg font-medium uppercase tracking-wide opacity-90">
-                  Building bridges between users and applications
+                <p className="text-base sm:text-lg tracking-wide opacity-90">
+                  We are the foremost independent partner in identity management, driven by a vision to empower everyone to use any technology safely. While that may seem ambitious, we’re turning it into reality through seamless and secure access, authentication, and authorization — creating a world where identity truly belongs to you.
                 </p>
 
                 <div className="space-y-4 text-base sm:text-lg opacity-95">
                   <p>
-                    We specialize in high-performance software for corporate identity and access management — delivering secure, scalable solutions for authentication, authorization, and auditing in complex enterprise environments.
+                    We set the standard for the industry and remain deeply committed to best-in-class security.
                   </p>
                   <p>
-                    Our flagship product, <strong>PremiumID Provider</strong>, powers seamless and resilient identity services for organizations handling millions of users and billions of transactions.
+                    Our expertise lies in high-performance software for corporate identity and access management, delivering secure, scalable solutions for authentication, authorization, and auditing across complex enterprise environments.
                   </p>
                 </div>
               </motion.div>

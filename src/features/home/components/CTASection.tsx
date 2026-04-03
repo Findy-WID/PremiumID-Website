@@ -15,7 +15,7 @@ export default function CTASection({ title, subtitle, buttonText }: CTASectionPr
 
   return (
     <>
-      <Section className='bg-gray-300'>
+      <Section className='bg-gray-100'>
         <div className="text-center">
           <h2 className={`${typography.h2} text-black mb-4`}>
             {title}

@@ -51,7 +51,7 @@ export default function InnovationSection() {
   }, []);
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-[#fcfbef]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <h2 className="text-4xl md:text-5xl font-bold text-blue-900 text-center mb-12">
