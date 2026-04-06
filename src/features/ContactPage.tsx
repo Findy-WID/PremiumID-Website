@@ -119,7 +119,7 @@ export default function ContactPage() {
                       <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Company Addresses</p>
                       <div className="space-y-1">
                         <p className="text-lg font-bold text-gray-900">DMCC, #1604 Fortune Executive Tower, Cluster T, JLT, Dubai, U.A.E.</p>
-                        <p className="text-lg font-bold text-gray-900">5, Aba Johnson Crescent, Harmony Enclave, Off Adeniyi Jones, Ikeja, Lagos.</p>
+                        <p className="text-lg font-bold text-gray-900">5, Abba Johnson Crescent, Harmony Enclave, Off Adeniyi Jones, Ikeja, Lagos.</p>
                       </div>
                     </div>
                   </div>
