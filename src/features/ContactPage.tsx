@@ -95,8 +95,8 @@ export default function ContactPage() {
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Reach Out Directly</h2>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Prefer email or a direct line? Our central support team handles inquiries
-                    globally and will route you to the correct regional expert.
+                    Send us a mail or visit any of our company addresses! Our support team is on standby to handles inquiries
+                    globally and route you to the right regional expert.
                   </p>
                 </div>
                 <div className="space-y-6">
@@ -106,8 +106,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Email Us</p>
-                      <a href="mailto:Info@premiumid.net" className="text-xl font-bold text-gray-900 hover:text-blue-600">
-                        Info@premiumid.net
+                      <a href="mailto:Sales@premiumid.net" className="text-xl font-bold text-gray-900 hover:text-blue-600">
+                        Sales@premiumid.net
                       </a>
                     </div>
                   </div>
@@ -116,10 +116,10 @@ export default function ContactPage() {
                       <Globe size={24} />
                     </div>
                     <div>
-                      <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Global Support</p>
+                      <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Company Addresses</p>
                       <div className="space-y-1">
-                        <p className="text-lg font-bold text-gray-900">NG: +234-8060-000400</p>
-                        <p className="text-lg font-bold text-gray-900">GH: +233 504957381</p>
+                        <p className="text-lg font-bold text-gray-900">DMCC, #1604 Fortune Executive Tower, Cluster T, JLT, Dubai, U.A.E.</p>
+                        <p className="text-lg font-bold text-gray-900">5, Aba Johnson Crescent, Harmony Enclave, Off Adeniyi Jones, Ikeja, Lagos.</p>
                       </div>
                     </div>
                   </div>
